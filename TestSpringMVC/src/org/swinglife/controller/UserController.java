@@ -25,8 +25,9 @@ public class UserController {
             mav.addObject("username",username);  
             mav.addObject("password", password);  
             return mav;  
-        }  
-        return new ModelAndView("home");  
+        }else{
+        	return new ModelAndView("home");  
+        }
     }  
       
     /*** 
