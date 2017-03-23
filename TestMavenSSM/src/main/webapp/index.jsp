@@ -22,5 +22,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     This is my JSP page. <br>
+    
+    <script type="text/javascript" src="<%=basePath%>script/jquery-1.11.2.js"></script>
+	<script type="text/javascript">
+		alert("<%=basePath%>script/jquery-1.11.2.js");
+		$(function(){
+			alert("jquery");
+		});
+	</script>
   </body>
 </html>
